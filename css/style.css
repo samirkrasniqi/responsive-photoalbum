@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+    background-color: #eee;
+    height: auto;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+#landing {
+    background: #fff;
+}
+
+#landing-text {
+    display: flex;
+    flex: 0 1 40vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#landing-text h2 {
+    color: #888;
+}
+
+#landing-image {
+    background-image: url(/images/photo-1522206024047-9c925421675b.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    flex: 0 1 60vw;
+    margin: 0;
+}
+
+.btn {
+    padding: 0.5rem 2rem;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin-top: 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+    transition: background ease 0.5s;
+}
+
+.btn:hover {
+    background: #f4f4f4;
+    cursor: pointer;
+}
+
+#header {
+    padding: 30px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+#header h2 {
+    display: inline-block;
+    border-left: 1px dotted #ccc;
+    border-right: 1px dotted #ccc;
+    padding: 10px;
+}
+
+.caption {
+    padding: 12.8px;
+    text-align: center;
+}
+
+footer {
+    padding: 2rem 1rem;
+    text-align: center;
+    color: #333;
+    margin: auto;
+}
+
+footer h3 {
+    font-size: 3rem;
+    margin-top: 48px;
+    margin-bottom: 0;
+}
+
+@media (min-width: 500px) {
+    #landing {
+        display: flex;
+    }
+    #landing-text {
+        min-height: 100vh;
+    }
+    #landing-image {
+        min-height: 100vh;
+    }
+}
+
+@media (min-width: 700px) {
+    .btn {
+        font-size: 1.5rem;
+        padding: 1rem 3rem;
+    }
+}
